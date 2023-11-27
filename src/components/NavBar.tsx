@@ -10,7 +10,6 @@ import {
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
-import React from "react";
 
 const NavBar = () => {
   return (
@@ -27,14 +26,14 @@ const NavBar = () => {
           </BreadcrumbItem>
 
           <BreadcrumbItem isCurrentPage>
-            <BreadcrumbLink href="#">My Projects</BreadcrumbLink>
+            <BreadcrumbLink href="#">Dashboard</BreadcrumbLink>
           </BreadcrumbItem>
         </Breadcrumb>
       </HStack>
       <HStack>
         <Wrap>
           <WrapItem>
-            <Avatar bg="#cbd5e0" size="md" name="ERRAOUDI Soufiane" />
+            <Avatar bg="#cbd5e0" size="sm" name="ERRAOUDI Soufiane" />
           </WrapItem>
         </Wrap>
       </HStack>
