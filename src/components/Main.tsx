@@ -39,21 +39,21 @@ const Main = () => {
         templateRows="repeat(8, 1fr)"
         templateColumns="repeat(5, 1fr)"
         gap={4}
-        padding={2}
+        padding={3}
       >
-        <GridItem height={"190px"} borderRadius={14} colSpan={2} bg="tomato">
+        <GridItem height={"190px"} borderRadius={14} colSpan={2} bg="#ffffff">
           balance
         </GridItem>
-        <GridItem borderRadius={14} colSpan={3} rowSpan={2} bg="tomato">
+        <GridItem borderRadius={14} colSpan={3} rowSpan={2} bg="#ffffff">
           insights
         </GridItem>
-        <GridItem borderRadius={14} colSpan={2} bg="tomato">
+        <GridItem borderRadius={14} colSpan={2} bg="#ffffff">
           favourite
         </GridItem>
-        <GridItem borderRadius={14} colSpan={5} rowSpan={3} bg="tomato">
+        <GridItem borderRadius={14} colSpan={5} rowSpan={3} bg="#ffffff">
           card status
         </GridItem>
-        <GridItem borderRadius={14} colSpan={5} rowSpan={3} bg="tomato">
+        <GridItem borderRadius={14} colSpan={5} rowSpan={3} bg="#ffffff">
           transactions
         </GridItem>
       </Grid>
