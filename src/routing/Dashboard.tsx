@@ -1,45 +1,32 @@
-import { Grid, GridItem, Show } from "@chakra-ui/react";
-import NavBar from "../components/NavBar";
-import Aside from "../components/Aside";
-import Main from "../components/Main";
+import { Box, Grid, GridItem } from "@chakra-ui/react";
 
 function Dashboard() {
   return (
-    <Grid
-      templateAreas={{
-        base: `"nav" "main"`,
-        lg: `"nav nav" "aside main"`,
-      }}
-      templateColumns={{
-        base: "1fr",
-        lg: "250px 1fr",
-      }}
-      height="100vh"
-      templateRows="65px 1fr"
-    >
-      <GridItem area="nav" bg="#ffffff" position="fixed" width="100%">
-        <NavBar />
-      </GridItem>
-
-      <Show above="lg">
-        <GridItem area="aside" position="fixed" top="60px">
-          <Aside />
-        </GridItem>
-      </Show>
-
-      <GridItem
-        area="main"
-        bg="#F5F5F5"
-        paddingLeft={3}
-        paddingBottom={3}
-        paddingTop={3}
-        paddingRight={1}
-        flex="1"
-        height="1fr"
+    <Box height="100%" overflowY="auto">
+      <Grid
+        h="100%"
+        templateRows="repeat(8, 1fr)"
+        templateColumns="repeat(5, 1fr)"
+        gap={4}
+        padding={3}
       >
-        <Main />
-      </GridItem>
-    </Grid>
+        <GridItem height={"190px"} borderRadius={14} colSpan={2} bg="#ffffff">
+          balance
+        </GridItem>
+        <GridItem borderRadius={14} colSpan={3} rowSpan={2} bg="#ffffff">
+          insights
+        </GridItem>
+        <GridItem borderRadius={14} colSpan={2} bg="#ffffff">
+          favourite
+        </GridItem>
+        <GridItem borderRadius={14} colSpan={5} rowSpan={3} bg="#ffffff">
+          card status
+        </GridItem>
+        <GridItem borderRadius={14} colSpan={5} rowSpan={3} bg="#ffffff">
+          transactions
+        </GridItem>
+      </Grid>
+    </Box>
   );
 }
 

@@ -1,7 +1,4 @@
 import {
-  EmailIcon,
-  ArrowForwardIcon,
-  AddIcon,
   CalendarIcon,
   DragHandleIcon,
   SettingsIcon,
@@ -9,8 +6,8 @@ import {
   TimeIcon,
   InfoOutlineIcon,
 } from "@chakra-ui/icons";
-import { Button, ButtonGroup, IconButton, Stack } from "@chakra-ui/react";
-import React from "react";
+import { Button, Stack } from "@chakra-ui/react";
+import { Link, NavLink } from "react-router-dom";
 
 const Aside = () => {
   return (
@@ -22,8 +19,9 @@ const Aside = () => {
         variant="ghost"
         justifyContent="flex-start"
       >
-        Dashboard
+        <Link to="/dashboard">Dashboard</Link>
       </Button>
+
       <Button
         leftIcon={<PlusSquareIcon />}
         borderRadius={"14px"}
@@ -31,8 +29,9 @@ const Aside = () => {
         variant="ghost"
         justifyContent="flex-start"
       >
-        Create Cards
+        <Link to="/createCards">Create Cards</Link>
       </Button>
+
       <Button
         leftIcon={<InfoOutlineIcon />}
         borderRadius={"14px"}
@@ -40,8 +39,9 @@ const Aside = () => {
         variant="ghost"
         justifyContent="flex-start"
       >
-        MyCards
+        <Link to="/">MyCards</Link>
       </Button>
+
       <Button
         leftIcon={<CalendarIcon />}
         borderRadius={"14px"}
@@ -49,8 +49,9 @@ const Aside = () => {
         variant="ghost"
         justifyContent="flex-start"
       >
-        Manage Cards
+        <Link to="/manageCards">Manage Cards</Link>
       </Button>
+
       <Button
         leftIcon={<TimeIcon />}
         borderRadius={"14px"}
@@ -58,8 +59,9 @@ const Aside = () => {
         variant="ghost"
         justifyContent="flex-start"
       >
-        Bill Payment
+        <Link to="/bill Payment">Bill Payment</Link>
       </Button>
+
       <Button
         leftIcon={<SettingsIcon />}
         borderRadius={"14px"}
@@ -67,7 +69,7 @@ const Aside = () => {
         variant="ghost"
         justifyContent="flex-start"
       >
-        Settings
+        <Link to="/settings">Settings</Link>
       </Button>
     </Stack>
   );
