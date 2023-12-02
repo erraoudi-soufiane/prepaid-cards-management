@@ -10,7 +10,12 @@ function Dashboard() {
         gap={4}
         padding={3}
       >
-        <GridItem height={"190px"} borderRadius={14} colSpan={2} bg="#ffffff">
+        <GridItem
+          minHeight={"190px"}
+          borderRadius={14}
+          colSpan={2}
+          bg="#ffffff"
+        >
           balance
         </GridItem>
         <GridItem borderRadius={14} colSpan={3} rowSpan={2} bg="#ffffff">
