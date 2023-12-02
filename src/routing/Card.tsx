@@ -1,9 +1,5 @@
 import { Box, Grid, GridItem, Show } from "@chakra-ui/react";
 
-import React from "react";
-import { Outlet } from "react-router-dom";
-import Aside from "../components/Aside";
-
 const Card = () => {
   return (
     <Box height="100%" overflowY="auto">
@@ -12,10 +8,6 @@ const Card = () => {
           base: `"cardDetails" "insights"`,
           lg: `"cardDetails insights" "infos infos" "transactions transactions"`,
         }}
-        // templateColumns={{
-        //   base: "1fr",
-        //   lg: "250px 1fr",
-        // }}
         padding={3}
         gap={4}
         height={"100%"}

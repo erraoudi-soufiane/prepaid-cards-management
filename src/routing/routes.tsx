@@ -13,7 +13,7 @@ const router = createBrowserRouter([
       { path: "dashboard", element: <Dashboard /> },
       { path: "manageCards", element: <ManageCards /> },
       { path: "dashboard/Card", element: <Card /> },
-      { path: "createCard", element: <CreateCards /> },
+      { path: "createCards", element: <CreateCards /> },
       { path: "manageCards/card", element: <Dashboard /> },
     ],
   },
