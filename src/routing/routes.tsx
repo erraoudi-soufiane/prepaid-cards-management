@@ -3,6 +3,7 @@ import Dashboard from "./Dashboard";
 import ManageCards from "./ManageCards";
 import CreateCards from "./CreateCards";
 import Layout from "./Layout";
+import Card from "./Card";
 
 const router = createBrowserRouter([
   {
@@ -11,6 +12,7 @@ const router = createBrowserRouter([
     children: [
       { path: "dashboard", element: <Dashboard /> },
       { path: "manageCards", element: <ManageCards /> },
+      { path: "dashboard/Card", element: <Card /> },
       { path: "createCard", element: <CreateCards /> },
       { path: "manageCards/card", element: <Dashboard /> },
     ],

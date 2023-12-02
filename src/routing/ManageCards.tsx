@@ -1,7 +1,6 @@
 import {
   TableContainer,
   Table,
-  TableCaption,
   Thead,
   Tr,
   Th,
@@ -172,8 +171,10 @@ const ManageCards = () => {
         </Table>
       </TableContainer>
       <HStack justifyContent={"center"}>
-        <Button colorScheme="teal">Submit</Button>
-        <Button variant="outline" mr={3}>
+        <Button borderRadius={22} colorScheme="teal">
+          Submit
+        </Button>
+        <Button borderRadius={22} variant="outline" mr={3}>
           Cancel
         </Button>
       </HStack>
