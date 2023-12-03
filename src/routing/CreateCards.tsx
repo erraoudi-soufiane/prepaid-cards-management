@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Button, Grid, GridItem, Stack, Text } from "@chakra-ui/react";
 import { EmailIcon, ArrowForwardIcon } from "@chakra-ui/icons";
+import CreateCardForm from "../components/CreateCardForm";
 
 const CreateCards = () => {
   return (
@@ -38,7 +39,7 @@ const CreateCards = () => {
           <Text fontSize="3xl" mb={"8px"}>
             Add New Card
           </Text>
-          <Box bg="#ffffff" borderRadius={14} mb={"8px"} height={"300px"}></Box>
+          <CreateCardForm />
           <Stack direction="row" spacing={4} justifyContent={"right"}>
             <Button borderRadius={22} colorScheme="teal" variant="solid">
               Activate
