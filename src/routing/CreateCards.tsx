@@ -42,7 +42,7 @@ const CreateCards = () => {
           <CreateCardForm />
           <Stack direction="row" spacing={4} justifyContent={"right"}>
             <Button borderRadius={22} colorScheme="teal" variant="solid">
-              Activate
+              Add
             </Button>
             <Button
               borderRadius={22}

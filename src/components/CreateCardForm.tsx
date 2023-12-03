@@ -20,6 +20,7 @@ const CreateCardForm = () => {
         gap={10}
         paddingY={4}
         paddingX={6}
+        mb={"9px"}
       >
         <GridItem area={"leftSide"}>
           <FormControlComponent label="CIN/Passport" type="text" />
