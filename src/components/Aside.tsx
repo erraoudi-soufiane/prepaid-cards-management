@@ -8,19 +8,24 @@ import {
 } from "@chakra-ui/icons";
 import { Button, Stack } from "@chakra-ui/react";
 import { Link, NavLink } from "react-router-dom";
+import CustomAsideButton from "./CustomAsideButton";
 
 const Aside = () => {
   return (
     <Stack paddingX={"20px"} paddingY={"50px"} spacing={2}>
-      <Button
-        leftIcon={<DragHandleIcon />}
-        borderRadius={"14px"}
-        colorScheme="teal"
-        variant="ghost"
-        justifyContent="flex-start"
-      >
-        <Link to="/dashboard">Dashboard</Link>
-      </Button>
+      <CustomAsideButton to="/dashboard" children="Dashboard" />
+
+      {/* <NavLink to="/dashboard">
+        <Button
+          leftIcon={<DragHandleIcon />}
+          borderRadius={"14px"}
+          colorScheme="teal"
+          variant="ghost"
+          justifyContent="flex-start"
+        >
+          Dashboard
+        </Button>
+      </NavLink> */}
 
       <Button
         leftIcon={<PlusSquareIcon />}
@@ -29,7 +34,7 @@ const Aside = () => {
         variant="ghost"
         justifyContent="flex-start"
       >
-        <Link to="/createCards">Create Cards</Link>
+        <NavLink to="/createCards">Create Cards</NavLink>
       </Button>
 
       <Button
@@ -39,7 +44,7 @@ const Aside = () => {
         variant="ghost"
         justifyContent="flex-start"
       >
-        <Link to="/">MyCards</Link>
+        <NavLink to="/">MyCards</NavLink>
       </Button>
 
       <Button
@@ -49,7 +54,7 @@ const Aside = () => {
         variant="ghost"
         justifyContent="flex-start"
       >
-        <Link to="/manageCards">Manage Cards</Link>
+        <NavLink to="/manageCards">Manage Cards</NavLink>
       </Button>
 
       <Button
@@ -59,7 +64,7 @@ const Aside = () => {
         variant="ghost"
         justifyContent="flex-start"
       >
-        <Link to="/bill Payment">Bill Payment</Link>
+        <NavLink to="/bill Payment">Bill Payment</NavLink>
       </Button>
 
       <Button
@@ -69,7 +74,7 @@ const Aside = () => {
         variant="ghost"
         justifyContent="flex-start"
       >
-        <Link to="/settings">Settings</Link>
+        <NavLink to="/settings">Settings</NavLink>
       </Button>
     </Stack>
   );
