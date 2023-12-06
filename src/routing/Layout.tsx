@@ -1,9 +1,9 @@
 import { Grid, GridItem, Show } from "@chakra-ui/react";
-import NavBar from "./components/NavBar";
-import Aside from "./components/Aside";
-import Main from "./components/Main";
+import NavBar from "../components/NavBar";
+import Aside from "../components/Aside";
+import { Outlet } from "react-router-dom";
 
-function App() {
+function Layout() {
   return (
     <Grid
       templateAreas={{
@@ -37,10 +37,10 @@ function App() {
         flex="1"
         height="1fr"
       >
-        <Main />
+        <Outlet />
       </GridItem>
     </Grid>
   );
 }
 
-export default App;
+export default Layout;
